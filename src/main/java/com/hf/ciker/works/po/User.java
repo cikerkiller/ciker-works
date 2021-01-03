@@ -15,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author ciker
- * @since 2021-01-01
+ * @since 2021-01-03
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
@@ -35,5 +35,6 @@ public class User extends BasePO {
 
     @ApiModelProperty(value = "密码")
     private String password;
+
 
 }

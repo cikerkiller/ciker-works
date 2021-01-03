@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.hf.ciker.works.po.BasePO;
 
@@ -29,11 +30,12 @@ public class MybatisPlusGen {
         gc.setIdType(IdType.UUID);
         gc.setSwagger2(true);
 //        gc.setEnableCache(false);// XML 二级缓存
-        gc.setBaseResultMap(true);// XML ResultMap
-        gc.setBaseColumnList(true);// XML columList
+//        gc.setBaseResultMap(true);// XML ResultMap
+//        gc.setBaseColumnList(true);// XML columList
         gc.setServiceName("%sService");
         gc.setAuthor("ciker");// 作者
         gc.setOpen(false);
+        gc.setDateType(DateType.ONLY_DATE);
         mpg.setGlobalConfig(gc);
 
 

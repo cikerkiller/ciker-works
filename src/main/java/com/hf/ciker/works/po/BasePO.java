@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * @author ciker
@@ -26,15 +26,15 @@ public class BasePO implements Serializable {
     private String createdBy;
 
     @ApiModelProperty(value = "创建时间")
-    @TableField(fill = FieldFill.INSERT)
-    private LocalDateTime createdDate;
+    @TableField(value = "created_date", fill = FieldFill.INSERT)
+    private Date createdDate;
 
     @ApiModelProperty(value = "更新者")
     private String updatedBy;
 
     @ApiModelProperty(value = "更新时间")
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private LocalDateTime updatedDate;
+    @TableField(value = "updated_date", fill = FieldFill.INSERT_UPDATE)
+    private Date updatedDate;
 
     @ApiModelProperty(value = "软删除戳")
     @TableLogic
@@ -42,5 +42,5 @@ public class BasePO implements Serializable {
 
     @ApiModelProperty(value = "版本号")
     @Version
-    private String version;
+    private Integer version;
 }

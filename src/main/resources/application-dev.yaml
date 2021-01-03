@@ -1,2 +1,14 @@
 server:
-  port: 8080
+  port: 8081
+  address: 127.0.0.1
+  servlet:
+    context-path: /works
+management:
+  endpoint:
+    shutdown:
+      enabled: true  #启用shutdown
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /MyActuator

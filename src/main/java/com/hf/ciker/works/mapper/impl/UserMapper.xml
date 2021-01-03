@@ -5,6 +5,7 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.hf.ciker.works.po.User">
         <id column="id_ck_user" property="idCkUser" />
+    <result column="version" property="version" />
         <result column="username" property="username" />
         <result column="password" property="password" />
         <result column="created_by" property="createdBy" />
@@ -16,6 +17,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
+        version,
         id_ck_user, username, password, created_by, created_date, updated_by, updated_date, is_delete
     </sql>
 

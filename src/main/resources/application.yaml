@@ -1,5 +1,7 @@
 debug: true
 server:
+  servlet:
+    context-path: /
   tomcat:
     uri-encoding: UTF-8
     max-threads: 1000
@@ -15,8 +17,6 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
-  devtools:
-    add-properties: false
   output:
     ansi:
       enabled: always
