@@ -23,8 +23,8 @@ import java.util.function.Supplier;
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 
-    private static String CREATE_TIME = "createdDate";
-    private static String UPDATE_TIME = "updatedDate";
+    private static String CREATE_TIME = "createdTime";
+    private static String UPDATE_TIME = "updatedTime";
 
     /**
      * 插入使用

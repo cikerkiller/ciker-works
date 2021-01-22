@@ -26,15 +26,15 @@ public class BasePO implements Serializable {
     private String createdBy;
 
     @ApiModelProperty(value = "创建时间")
-    @TableField(value = "created_date", fill = FieldFill.INSERT)
-    private Date createdDate;
+    @TableField(value = "created_time", fill = FieldFill.INSERT)
+    private Date createdTime;
 
     @ApiModelProperty(value = "更新者")
     private String updatedBy;
 
     @ApiModelProperty(value = "更新时间")
-    @TableField(value = "updated_date", fill = FieldFill.INSERT_UPDATE)
-    private Date updatedDate;
+    @TableField(value = "updated_time", fill = FieldFill.INSERT_UPDATE)
+    private Date updatedTime;
 
     @ApiModelProperty(value = "软删除戳")
     @TableLogic

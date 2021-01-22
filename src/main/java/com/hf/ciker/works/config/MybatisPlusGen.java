@@ -20,7 +20,7 @@ public class MybatisPlusGen {
     public static void main(String[] args) {
 
         AutoGenerator mpg = new AutoGenerator();
-        String[] tables = new String[]{"ck_user"};
+        String[] tables = new String[]{"ck_batch_data"};
         String projectPath = System.getProperty("user.dir");
 
         // 全局配置
@@ -45,7 +45,7 @@ public class MybatisPlusGen {
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
-        dsc.setUrl("jdbc:mysql://localhost:3306/shirodemo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://localhost:3306/ciker?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC");
         mpg.setDataSource(dsc);
 
         // 策略配置

@@ -1,8 +1,5 @@
 server:
-  port: 8081
-  address: 127.0.0.1
-  servlet:
-    context-path: /works
+  port: 8080
 management:
   endpoint:
     shutdown:
